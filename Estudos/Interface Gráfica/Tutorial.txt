@@ -1,0 +1,2 @@
+1-Instalar o Tkinter:
+1.2- Comando: pip install mysql-connector-python tk
