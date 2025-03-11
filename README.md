@@ -1,4 +1,6 @@
-**Python: A Linguagem de Programação Versátil e Poderosa**
+**Neste Repositório demonstro meus estudos e projetos em Python**
+
+---
 
 ### História do Python
 Python foi criado por Guido van Rossum no final da década de 1980 e lançado oficialmente em 1991. A linguagem foi projetada para ser simples, legível e produtiva, inspirando-se em outras linguagens como ABC, C e Modula-3. Com o passar do tempo, Python se tornou uma das linguagens mais populares do mundo, amplamente utilizada em diversas áreas da tecnologia.
