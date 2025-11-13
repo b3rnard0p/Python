@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Teste</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .produto { border: 1px solid #ccc; padding: 15px; border-radius: 8px; max-width: 300px; }
+        .btn-comprar {
+            display: inline-block;
+            background-color: #009ee3;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .error { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Ecommerce Teste</h1>
+    
+    <div class="produto">
+        <p>Camisa</p>
+        <p>Preço: R$259,99</p>
+
+        <!-- Verifica se o link_pagamento existe -->
+        {% if link_pagamento %}
+            <a href="{{ link_pagamento }}" class="btn-comprar">Compre aqui</a>
+        <!-- Caso contrário, mostra a mensagem de erro -->
+        {% else %}
+            <p class="error">{{ error or "Erro desconhecido ao gerar link." }}</p>
+        {% endif %}
+    </div>
+
+</body>
+</html>
